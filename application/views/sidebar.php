@@ -3,7 +3,7 @@
 		<ul class="nav nav-list">
 			<li class=""><a href="<?php echo site_url('interfaces');?>">Interfaces</a></li>
 			<li class="divider"></li>
-			<li><a href="#">Bridge</a></li>
+			<li><a href="<?php echo site_url('bridge');?>">Bridge</a></li>
 			<li class="divider"></li>
 			<li><a href="#">PPP</a></li>
 			<li class="divider"></li>
