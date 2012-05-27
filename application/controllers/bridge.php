@@ -1,11 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Bridge extends CI_Controller {
+class Bridge extends MY_Controller {
 	
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->spark('mikrotik_api/0.7.0');
 	}
 
 	public function index()

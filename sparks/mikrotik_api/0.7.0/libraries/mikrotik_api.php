@@ -82,8 +82,21 @@ class Mikrotik_Api {
         if (isset($param_config) && is_array($param_config)){
             $this->param = $param_config;
         } else {
-             $this->param = $param;
+        	$this->param = $param;
         }
+        
+        if (isset($param['mikrotik']) && is_array($param['mikrotik']) && count($param['mikrotik']) > 0) {
+             $this->param = $param['mikrotik'];
+        }
+    }
+    
+    /**
+     * Initialize parameter
+     * @access public
+     * @var type array
+     */    
+    function initialize($param=array()) {
+        $this->__construct($param);
     }
     
     /**

@@ -1,16 +1,15 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Firewall extends CI_Controller {
+class Firewall extends MY_Controller {
 	
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->spark('mikrotik_api/0.7.0');
 	}
 
 	public function index()
 	{
-		redirect('firewall/filter');
+		redirect('ip/firewall/filter');
 	}
 	
 	public function filter()
@@ -57,4 +56,4 @@ class Firewall extends CI_Controller {
 }
 
 /* End of file firewall.php */
-/* Location: ./application/controllers/firewall.php */
+/* Location: ./application/controllers/ip/firewall.php */
